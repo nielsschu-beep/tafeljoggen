@@ -1,0 +1,59 @@
+/* ============================================================
+   STUDENT THEME OVERRIDES
+   Student.json differences from Teacher:
+   - border radius: 50=size.100(4px), 100=size.150(6px), 200=size.300(12px)...
+     Student radius is systematically larger → rounder, more child-friendly
+   - font display.large = size.800 (48px) vs Teacher size.700 (40px)
+   - button height 1000 m = size.1200 (56px) vs Teacher size.1000 (40px)
+   ============================================================ */
+
+:root.student {
+  /* Border radius — Student (larger, rounder, child-friendly) */
+  --radius-50:   var(--size-100);   /* 4px  (Teacher: 2px) */
+  --radius-100:  var(--size-150);   /* 6px  (Teacher: 4px) */
+  --radius-200:  var(--size-300);   /* 12px (Teacher: 8px) */
+  --radius-300:  var(--size-400);   /* 16px (Teacher: 12px) */
+  --radius-400:  var(--size-500);   /* 20px (Teacher: 16px) */
+  --radius-500:  var(--size-600);   /* 24px (Teacher: 20px) */
+  --radius-600:  var(--size-700);   /* 28px (Teacher: 24px) */
+  --radius-700:  var(--size-800);   /* 32px (Teacher: 28px) */
+  --radius-800:  var(--size-900);   /* 36px (Teacher: 32px) */
+  --radius-900:  var(--size-1100);  /* 48px (Teacher: 40px) */
+  --radius-1000: var(--size-1200);  /* 56px (Teacher: 48px) */
+  --radius-round: var(--size-2200); /* 256px (same) */
+
+  /* Button heights — Student (larger tap targets) */
+  --btn-height-xs:  var(--size-800);   /* 32px (Teacher: 24px) */
+  --btn-height-s:   var(--size-1000);  /* 40px (Teacher: 32px) */
+  --btn-height-sm:  var(--size-1100);  /* 48px (Teacher: 36px) */
+  --btn-height-m:   var(--size-1200);  /* 56px (Teacher: 40px) */
+  --btn-height-l:   var(--size-1300);  /* 64px (Teacher: 48px) */
+  --btn-height-xl:  var(--size-1400);  /* 72px (Teacher: 56px) */
+  --btn-height-xxl: var(--size-1500);  /* 80px (Teacher: 64px) */
+
+  /* Font display — Student (larger text) */
+  --font-display-large-size:  var(--font-size-800);    /* 48px (Teacher: 40px) */
+  --font-display-large-lh:    var(--line-height-800);  /* 72px (Teacher: 60px) */
+  --font-display-medium-size: var(--font-size-650);    /* 36px (Teacher: 32px) */
+  --font-display-medium-lh:   var(--line-height-650);  /* 54px (Teacher: 48px) */
+  --font-display-small-size:  var(--font-size-550);    /* 28px (Teacher: 24px) */
+  --font-display-small-lh:    var(--line-height-550);  /* 42px (Teacher: 36px) */
+
+  /* Font headline — Student (larger) */
+  --font-headline-large-size:  var(--font-size-650);   /* 36px (Teacher: 32px) */
+  --font-headline-large-lh:    var(--line-height-650); /* 54px (Teacher: 48px) */
+  --font-headline-medium-size: var(--font-size-600);   /* 32px (Teacher: 24px) */
+  --font-headline-medium-lh:   var(--line-height-600); /* 48px (Teacher: 36px) */
+  --font-headline-small-size:  var(--font-size-500);   /* 24px (Teacher: 20px) */
+  --font-headline-small-lh:    var(--line-height-500); /* 36px (Teacher: 32px) */
+  --font-headline-xsmall-size: var(--font-size-400);   /* 20px (Teacher: 16px) */
+  --font-headline-xsmall-lh:   var(--line-height-400); /* 32px (Teacher: 24px) */
+
+  /* Title — Student (Lexend Deca, larger) */
+  --font-title-large-size:  var(--font-size-550);   /* 28px (Teacher: 24px) */
+  --font-title-large-lh:    var(--line-height-550);  /* 42px (Teacher: 36px) */
+  --font-title-medium-size: var(--font-size-500);   /* 24px (Teacher: 20px) */
+  --font-title-medium-lh:   var(--line-height-500);  /* 36px (Teacher: 32px) */
+  --font-title-small-size:  var(--font-size-350);   /* 18px (Teacher: 16px) */
+  --font-title-small-lh:    var(--line-height-350);  /* 28px (Teacher: 24px) */
+}

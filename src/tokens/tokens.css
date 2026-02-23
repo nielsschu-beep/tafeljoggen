@@ -1,0 +1,507 @@
+/* ============================================================
+   GYNZY DESIGN TOKENS — CSS Custom Properties
+   Generated from Figma token export
+   3-layer architecture:
+   1. Primitives (raw values)
+   2. Semantic defaults (Teacher = default)
+   3. Theme overrides in theme-teacher.css / theme-student.css
+   ============================================================ */
+
+:root {
+  /* =========================================================
+     LAYER 1: COLOR PRIMITIVES
+     ========================================================= */
+
+  /* Brand */
+  --color-gynzy-blue: #2f9ad4;
+  --color-gynzy-orange: #ff962e;
+  --color-gynzy-light-blue: #effaff;
+  --color-gynzy-light-orange: #fff4eb;
+
+  /* Sky (primary palette) */
+  --color-sky-100: #effaff;
+  --color-sky-200: #d4eefc;
+  --color-sky-300: #b7e3fa;
+  --color-sky-400: #97d4f5;
+  --color-sky-500: #7ac7f0;
+  --color-sky-600: #59b6e8;
+  --color-sky-700: #38a4de;
+  --color-sky-800: #2f9ad4;
+  --color-sky-900: #2b8fc5;
+  --color-sky-1000: #28759f;
+  --color-sky-1100: #1f5e7f;
+  --color-sky-1200: #1a455b;
+  --color-sky-disabled: #a9c8d9;
+
+  /* Grey (neutral palette) */
+  --color-grey-100: #f5f5f8;
+  --color-grey-200: #e9eaef;
+  --color-grey-300: #d1d3de;
+  --color-grey-400: #aeb7c2;
+  --color-grey-500: #8c99a8;
+  --color-grey-600: #6b7c8e;
+  --color-grey-700: #556474;
+  --color-grey-800: #3f4c5a;
+  --color-grey-900: #2a3541;
+
+  /* Crimson */
+  --color-crimson-100: #fdf4f4;
+  --color-crimson-200: #fee7e7;
+  --color-crimson-300: #fdc9c9;
+  --color-crimson-400: #f9a9a9;
+  --color-crimson-500: #f58a8a;
+  --color-crimson-600: #ee6868;
+  --color-crimson-700: #e64545;
+  --color-crimson-800: #e13636;
+  --color-crimson-900: #d72d2d;
+  --color-crimson-1000: #b42727;
+  --color-crimson-1100: #921f1f;
+  --color-crimson-1200: #6e1c1c;
+  --color-crimson-disabled: #e1a9a9;
+
+  /* Pumpkin */
+  --color-pumpkin-100: #fff4eb;
+  --color-pumpkin-200: #ffdebd;
+  --color-pumpkin-300: #ffcf9e;
+  --color-pumpkin-400: #ffbd7a;
+  --color-pumpkin-500: #ffab57;
+  --color-pumpkin-600: #ff962e;
+  --color-pumpkin-700: #fa830c;
+  --color-pumpkin-800: #e1760a;
+  --color-pumpkin-900: #ce6e0d;
+  --color-pumpkin-1000: #a4590e;
+  --color-pumpkin-1100: #7f440a;
+  --color-pumpkin-1200: #57300a;
+  --color-pumpkin-disabled: #dbbd9f;
+
+  /* Lemon */
+  --color-lemon-100: #fffae5;
+  --color-lemon-200: #fff4bd;
+  --color-lemon-300: #ffef9e;
+  --color-lemon-400: #ffe979;
+  --color-lemon-500: #ffe357;
+  --color-lemon-600: #ffdc2e;
+  --color-lemon-700: #fad20c;
+  --color-lemon-800: #e6c10a;
+  --color-lemon-900: #ceae0d;
+  --color-lemon-1000: #a48b0e;
+  --color-lemon-1100: #7e6b0a;
+  --color-lemon-1200: #574a0a;
+
+  /* Pear */
+  --color-pear-100: #f7fce8;
+  --color-pear-200: #f0fad1;
+  --color-pear-300: #e6f6b6;
+  --color-pear-400: #daef99;
+  --color-pear-500: #cee97c;
+  --color-pear-600: #bfdf5d;
+  --color-pear-700: #afd441;
+  --color-pear-800: #a4c839;
+  --color-pear-900: #96b635;
+  --color-pear-1000: #7a922f;
+  --color-pear-1100: #607425;
+  --color-pear-1200: #45521e;
+
+  /* Mantis */
+  --color-mantis-100: #f0ffec;
+  --color-mantis-200: #dcfbd5;
+  --color-mantis-300: #c4f8ba;
+  --color-mantis-400: #aaf19c;
+  --color-mantis-500: #91eb7f;
+  --color-mantis-600: #75e260;
+  --color-mantis-700: #59d640;
+  --color-mantis-800: #50cb37;
+  --color-mantis-900: #4abc34;
+  --color-mantis-1000: #40982f;
+  --color-mantis-1100: #2d6621;
+  --color-mantis-1200: #28571e;
+  --color-mantis-disabled: #b3d6ac;
+
+  /* Emerald */
+  --color-emerald-100: #ecfdf4;
+  --color-emerald-200: #caf7e0;
+  --color-emerald-300: #aff3d1;
+  --color-emerald-400: #94ebbf;
+  --color-emerald-500: #78e3ad;
+  --color-emerald-600: #5ad899;
+  --color-emerald-700: #3dcc84;
+  --color-emerald-800: #38bc7a;
+  --color-emerald-900: #38a870;
+  --color-emerald-1000: #32865c;
+  --color-emerald-1100: #266847;
+  --color-emerald-1200: #1e4833;
+
+  /* Caribbean */
+  --color-caribbean-100: #ecfffe;
+  --color-caribbean-200: #d1fafa;
+  --color-caribbean-300: #b6f6f6;
+  --color-caribbean-400: #99efef;
+  --color-caribbean-500: #7ce9e9;
+  --color-caribbean-600: #5ddfdf;
+  --color-caribbean-700: #3fd4d4;
+  --color-caribbean-800: #37c7c7;
+  --color-caribbean-900: #35b6b6;
+  --color-caribbean-1000: #2f9292;
+  --color-caribbean-1100: #257474;
+  --color-caribbean-1200: #1e5252;
+
+  /* Indigo */
+  --color-indigo-100: #e4eafb;
+  --color-indigo-200: #cad5f7;
+  --color-indigo-300: #afc0f3;
+  --color-indigo-400: #93a9eb;
+  --color-indigo-500: #7892e3;
+  --color-indigo-600: #5a79d8;
+  --color-indigo-700: #3d61cc;
+  --color-indigo-800: #3859bc;
+  --color-indigo-900: #3854a8;
+  --color-indigo-1000: #324786;
+  --color-indigo-1100: #263669;
+  --color-indigo-1200: #1e2848;
+
+  /* Lavender */
+  --color-lavender-100: #f5ecff;
+  --color-lavender-200: #e8d5fb;
+  --color-lavender-300: #d9b9f8;
+  --color-lavender-400: #c69af2;
+  --color-lavender-500: #b57eec;
+  --color-lavender-600: #a05fe3;
+  --color-lavender-700: #8c41d9;
+  --color-lavender-800: #8238ce;
+  --color-lavender-900: #7732bd;
+  --color-lavender-1000: #632e99;
+  --color-lavender-1100: #4e237a;
+  --color-lavender-1200: #3a1d58;
+
+  /* Fuchsia */
+  --color-fuchsia-100: #feecff;
+  --color-fuchsia-200: #fbd5fb;
+  --color-fuchsia-300: #f8b9f8;
+  --color-fuchsia-400: #f29bf2;
+  --color-fuchsia-500: #ec7eec;
+  --color-fuchsia-600: #e35fe3;
+  --color-fuchsia-700: #d941d9;
+  --color-fuchsia-800: #cd37cd;
+  --color-fuchsia-900: #bd32bd;
+  --color-fuchsia-1000: #992e99;
+  --color-fuchsia-1100: #7a237a;
+  --color-fuchsia-1200: #581d58;
+
+  /* Cranberry */
+  --color-cranberry-100: #ffecf7;
+  --color-cranberry-200: #fbd5e8;
+  --color-cranberry-300: #f8bad9;
+  --color-cranberry-400: #f29dc7;
+  --color-cranberry-500: #eb7fb5;
+  --color-cranberry-600: #e260a0;
+  --color-cranberry-700: #d7428c;
+  --color-cranberry-800: #cc3881;
+  --color-cranberry-900: #bc3477;
+  --color-cranberry-1000: #982f63;
+  --color-cranberry-1100: #79244e;
+  --color-cranberry-1200: #571e3a;
+
+  /* Foundation: White with opacity */
+  --color-white: #ffffff;
+  --color-white-10: #ffffff1a;
+  --color-white-20: #ffffff33;
+  --color-white-30: #ffffff4d;
+  --color-white-40: #ffffff66;
+  --color-white-50: #ffffff80;
+  --color-white-60: #ffffff99;
+  --color-white-70: #ffffffb3;
+  --color-white-80: #ffffffcc;
+  --color-white-90: #ffffffe6;
+
+  /* Foundation: Black with opacity */
+  --color-black: #000000;
+  --color-black-10: #0000001a;
+  --color-black-20: #00000033;
+  --color-black-30: #0000004d;
+  --color-black-40: #00000066;
+  --color-black-50: #00000080;
+  --color-black-60: #00000099;
+  --color-black-70: #000000b3;
+  --color-black-80: #000000cc;
+  --color-black-90: #000000e6;
+
+  /* =========================================================
+     LAYER 1: TYPOGRAPHY PRIMITIVES
+     ========================================================= */
+
+  --font-heading: 'Lexend Deca', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+
+  /* Font sizes (px) */
+  --font-size-100: 8px;
+  --font-size-150: 10px;
+  --font-size-200: 12px;
+  --font-size-250: 14px;
+  --font-size-300: 16px;
+  --font-size-350: 18px;
+  --font-size-400: 20px;
+  --font-size-500: 24px;
+  --font-size-550: 28px;
+  --font-size-600: 32px;
+  --font-size-650: 36px;
+  --font-size-700: 40px;
+  --font-size-800: 48px;
+  --font-size-900: 56px;
+  --font-size-1000: 64px;
+
+  /* Line heights (px) */
+  --line-height-100: 12px;
+  --line-height-150: 16px;
+  --line-height-200: 18px;
+  --line-height-250: 20px;
+  --line-height-300: 24px;
+  --line-height-350: 28px;
+  --line-height-400: 32px;
+  --line-height-500: 36px;
+  --line-height-550: 42px;
+  --line-height-600: 48px;
+  --line-height-650: 54px;
+  --line-height-700: 60px;
+  --line-height-800: 72px;
+  --line-height-900: 84px;
+  --line-height-1000: 96px;
+
+  /* =========================================================
+     LAYER 1: SIZE PRIMITIVES
+     ========================================================= */
+
+  --size-0: 0px;
+  --size-25: 1px;
+  --size-50: 2px;
+  --size-100: 4px;
+  --size-150: 6px;
+  --size-200: 8px;
+  --size-250: 10px;
+  --size-300: 12px;
+  --size-350: 14px;
+  --size-400: 16px;
+  --size-500: 20px;
+  --size-600: 24px;
+  --size-700: 28px;
+  --size-800: 32px;
+  --size-900: 36px;
+  --size-1000: 40px;
+  --size-1050: 44px;
+  --size-1100: 48px;
+  --size-1150: 52px;
+  --size-1200: 56px;
+  --size-1300: 64px;
+  --size-1400: 72px;
+  --size-1500: 80px;
+  --size-1600: 88px;
+  --size-1700: 96px;
+  --size-1800: 104px;
+  --size-1900: 112px;
+  --size-2000: 120px;
+  --size-2100: 128px;
+  --size-2200: 256px;
+
+  /* =========================================================
+     LAYER 2: SEMANTIC DEFAULTS (Teacher = default)
+     primary = sky, neutral = grey
+     ========================================================= */
+
+  /* Primary (sky) */
+  --primary-100: var(--color-sky-100);
+  --primary-200: var(--color-sky-200);
+  --primary-300: var(--color-sky-300);
+  --primary-400: var(--color-sky-400);
+  --primary-500: var(--color-sky-500);
+  --primary-600: var(--color-sky-600);
+  --primary-700: var(--color-sky-700);
+  --primary-800: var(--color-sky-800);
+  --primary-900: var(--color-sky-900);
+  --primary-1000: var(--color-sky-1000);
+  --primary-1100: var(--color-sky-1100);
+  --primary-1200: var(--color-sky-1200);
+  --primary-disabled: var(--color-sky-disabled);
+
+  /* Neutral (grey) */
+  --neutral-100: var(--color-grey-100);
+  --neutral-200: var(--color-grey-200);
+  --neutral-300: var(--color-grey-300);
+  --neutral-400: var(--color-grey-400);
+  --neutral-500: var(--color-grey-500);
+  --neutral-600: var(--color-grey-600);
+  --neutral-700: var(--color-grey-700);
+  --neutral-800: var(--color-grey-800);
+  --neutral-900: var(--color-grey-900);
+  --neutral-white: var(--color-white);
+  --neutral-black: var(--color-black);
+
+  /* =========================================================
+     LAYER 2: BUTTON COMPONENT TOKENS
+     Resolved from Mapped/Value.json component.button tokens
+     ========================================================= */
+
+  /* Filled Sky */
+  --btn-filled-sky-bg:          var(--primary-1000);
+  --btn-filled-sky-bg-hover:    var(--primary-900);
+  --btn-filled-sky-bg-active:   var(--primary-1100);
+  --btn-filled-sky-bg-disabled: var(--primary-disabled);
+  --btn-filled-sky-label:       var(--color-white);
+  --btn-filled-sky-label-disabled: var(--color-white);
+
+  /* Filled Pumpkin */
+  --btn-filled-pumpkin-bg:          var(--color-pumpkin-700);
+  --btn-filled-pumpkin-bg-hover:    var(--color-pumpkin-600);
+  --btn-filled-pumpkin-bg-active:   var(--color-pumpkin-800);
+  --btn-filled-pumpkin-bg-disabled: var(--color-pumpkin-disabled);
+  --btn-filled-pumpkin-label:       var(--color-white);
+  --btn-filled-pumpkin-label-disabled: var(--color-white);
+
+  /* Filled Crimson */
+  --btn-filled-crimson-bg:          var(--color-crimson-900);
+  --btn-filled-crimson-bg-hover:    var(--color-crimson-800);
+  --btn-filled-crimson-bg-active:   var(--color-crimson-1000);
+  --btn-filled-crimson-bg-disabled: var(--color-crimson-disabled);
+  --btn-filled-crimson-label:       var(--color-white);
+  --btn-filled-crimson-label-disabled: var(--color-white);
+
+  /* Tonal */
+  --btn-tonal-bg:          var(--primary-200);
+  --btn-tonal-bg-hover:    var(--primary-300);
+  --btn-tonal-bg-active:   var(--primary-400);
+  --btn-tonal-bg-disabled: var(--primary-100);
+  --btn-tonal-label:       var(--primary-1100);
+  --btn-tonal-label-disabled: var(--primary-disabled);
+
+  /* Outlined */
+  --btn-outlined-bg:          var(--color-white);
+  --btn-outlined-bg-hover:    var(--primary-200);
+  --btn-outlined-bg-active:   var(--primary-300);
+  --btn-outlined-stroke:       var(--primary-1000);
+  --btn-outlined-stroke-disabled: var(--primary-disabled);
+  --btn-outlined-label:       var(--primary-1100);
+  --btn-outlined-label-disabled: var(--primary-disabled);
+
+  /* Text */
+  --btn-text-bg:          transparent;
+  --btn-text-bg-hover:    var(--primary-200);
+  --btn-text-bg-active:   var(--primary-300);
+  --btn-text-label:       var(--primary-1100);
+  --btn-text-label-disabled: var(--primary-disabled);
+
+  /* =========================================================
+     LAYER 2: BUTTON HEIGHTS
+     Teacher values (from Teacher.json button height tokens)
+     ========================================================= */
+
+  --btn-height-xs:  var(--size-600);   /* 24px */
+  --btn-height-s:   var(--size-800);   /* 32px */
+  --btn-height-sm:  var(--size-900);   /* 36px */
+  --btn-height-m:   var(--size-1000);  /* 40px */
+  --btn-height-l:   var(--size-1100);  /* 48px — Teacher: size.1100 */
+  --btn-height-xl:  var(--size-1200);  /* 56px */
+  --btn-height-xxl: var(--size-1300);  /* 64px */
+
+  /* =========================================================
+     LAYER 2: ICON HEIGHTS
+     ========================================================= */
+
+  --icon-height-xs:  var(--size-300);   /* 12px */
+  --icon-height-s:   var(--size-400);   /* 16px */
+  --icon-height-m:   var(--size-500);   /* 20px */
+  --icon-height-l:   var(--size-600);   /* 24px */
+  --icon-height-xl:  var(--size-700);   /* 28px */
+  --icon-height-2xl: var(--size-800);   /* 32px */
+  --icon-height-3xl: var(--size-900);   /* 36px */
+  --icon-height-4xl: var(--size-1000);  /* 40px */
+
+  /* =========================================================
+     LAYER 2: BORDER RADIUS — Teacher defaults
+     Teacher.json: border radius.50 = size.50 (2px), 100 = size.100 (4px)…
+     ========================================================= */
+
+  --radius-50:   var(--size-50);    /* 2px */
+  --radius-100:  var(--size-100);   /* 4px */
+  --radius-200:  var(--size-200);   /* 8px */
+  --radius-300:  var(--size-300);   /* 12px */
+  --radius-400:  var(--size-400);   /* 16px */
+  --radius-500:  var(--size-500);   /* 20px */
+  --radius-600:  var(--size-600);   /* 24px */
+  --radius-700:  var(--size-700);   /* 28px */
+  --radius-800:  var(--size-800);   /* 32px */
+  --radius-900:  var(--size-1000);  /* 40px */
+  --radius-1000: var(--size-1100);  /* 48px */
+  --radius-round: var(--size-2200); /* 256px */
+
+  /* =========================================================
+     LAYER 2: DENSITY — Teacher density-regular defaults
+     ========================================================= */
+
+  --density-min-height: var(--btn-height-m); /* 40px */
+  --density-gap-50:   var(--size-50);   /* 2px */
+  --density-gap-100:  var(--size-100);  /* 4px */
+  --density-gap-200:  var(--size-200);  /* 8px */
+  --density-gap-300:  var(--size-300);  /* 12px */
+  --density-gap-400:  var(--size-400);  /* 16px */
+  --density-gap-500:  var(--size-500);  /* 20px */
+  --density-gap-600:  var(--size-600);  /* 24px */
+  --density-gap-700:  var(--size-700);  /* 28px */
+  --density-gap-800:  var(--size-800);  /* 32px */
+  --density-gap-900:  var(--size-900);  /* 36px */
+  --density-gap-1000: var(--size-1000); /* 40px */
+
+  /* =========================================================
+     LAYER 2: FONT STYLE TOKENS — Teacher defaults
+     ========================================================= */
+
+  /* Display */
+  --font-display-large-size: var(--font-size-700);   /* 40px */
+  --font-display-large-lh:   var(--line-height-700); /* 60px */
+  --font-display-medium-size: var(--font-size-600);  /* 32px */
+  --font-display-medium-lh:   var(--line-height-600);/* 48px */
+  --font-display-small-size:  var(--font-size-500);  /* 24px */
+  --font-display-small-lh:    var(--line-height-500);/* 36px */
+
+  /* Headline */
+  --font-headline-large-size:  var(--font-size-600);  /* 32px */
+  --font-headline-large-lh:    var(--line-height-600);/* 48px */
+  --font-headline-medium-size: var(--font-size-500);  /* 24px */
+  --font-headline-medium-lh:   var(--line-height-500);/* 36px */
+  --font-headline-small-size:  var(--font-size-400);  /* 20px */
+  --font-headline-small-lh:    var(--line-height-400);/* 32px */
+  --font-headline-xsmall-size: var(--font-size-300);  /* 16px */
+  --font-headline-xsmall-lh:   var(--line-height-300);/* 24px */
+
+  /* Title */
+  --font-title-large-size:  var(--font-size-500);  /* 24px */
+  --font-title-large-lh:    var(--line-height-500);/* 36px */
+  --font-title-medium-size: var(--font-size-400);  /* 20px */
+  --font-title-medium-lh:   var(--line-height-400);/* 32px */
+  --font-title-small-size:  var(--font-size-300);  /* 16px */
+  --font-title-small-lh:    var(--line-height-300);/* 24px */
+}
+
+/* =========================================================
+   DENSITY VARIANTS (combined with theme for correct values)
+   ========================================================= */
+
+/* Teacher + densities */
+:root.teacher.density-regular,
+:root.density-regular {
+  --density-min-height: var(--size-1000); /* 40px */
+}
+:root.teacher.density-short {
+  --density-min-height: var(--size-800);  /* 32px */
+}
+:root.teacher.density-tall {
+  --density-min-height: var(--size-1100); /* 48px */
+}
+
+/* Student + densities (larger base heights) */
+:root.student.density-regular {
+  --density-min-height: var(--size-1200); /* 56px */
+}
+:root.student.density-short {
+  --density-min-height: var(--size-1000); /* 40px */
+}
+:root.student.density-tall {
+  --density-min-height: var(--size-1300); /* 64px */
+}
