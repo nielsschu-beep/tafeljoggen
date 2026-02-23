@@ -1,0 +1,58 @@
+/* ============================================================
+   TEACHER THEME OVERRIDES
+   Teacher.json:
+   - border radius: 50=size.50(2px), 100=size.100(4px), 200=size.200(8px)...
+   - font display.large = size.700 (40px)
+   - button height 1000 m = size.1000 (40px)
+   ============================================================ */
+
+:root.teacher {
+  /* Border radius — Teacher (smaller, more professional) */
+  --radius-50:   var(--size-50);    /* 2px */
+  --radius-100:  var(--size-100);   /* 4px */
+  --radius-200:  var(--size-200);   /* 8px */
+  --radius-300:  var(--size-300);   /* 12px */
+  --radius-400:  var(--size-400);   /* 16px */
+  --radius-500:  var(--size-500);   /* 20px */
+  --radius-600:  var(--size-600);   /* 24px */
+  --radius-700:  var(--size-700);   /* 28px */
+  --radius-800:  var(--size-800);   /* 32px */
+  --radius-900:  var(--size-1000);  /* 40px */
+  --radius-1000: var(--size-1100);  /* 48px */
+  --radius-round: var(--size-2200); /* 256px */
+
+  /* Button heights — Teacher */
+  --btn-height-xs:  var(--size-600);   /* 24px */
+  --btn-height-s:   var(--size-800);   /* 32px */
+  --btn-height-sm:  var(--size-900);   /* 36px */
+  --btn-height-m:   var(--size-1000);  /* 40px */
+  --btn-height-l:   var(--size-1100);  /* 48px */
+  --btn-height-xl:  var(--size-1200);  /* 56px */
+  --btn-height-xxl: var(--size-1300);  /* 64px */
+
+  /* Font display — Teacher */
+  --font-display-large-size:  var(--font-size-700);    /* 40px */
+  --font-display-large-lh:    var(--line-height-700);  /* 60px */
+  --font-display-medium-size: var(--font-size-600);    /* 32px */
+  --font-display-medium-lh:   var(--line-height-600);  /* 48px */
+  --font-display-small-size:  var(--font-size-500);    /* 24px */
+  --font-display-small-lh:    var(--line-height-500);  /* 36px */
+
+  /* Font headline — Teacher */
+  --font-headline-large-size:  var(--font-size-600);   /* 32px */
+  --font-headline-large-lh:    var(--line-height-600); /* 48px */
+  --font-headline-medium-size: var(--font-size-500);   /* 24px */
+  --font-headline-medium-lh:   var(--line-height-500); /* 36px */
+  --font-headline-small-size:  var(--font-size-400);   /* 20px */
+  --font-headline-small-lh:    var(--line-height-400); /* 32px */
+  --font-headline-xsmall-size: var(--font-size-300);   /* 16px */
+  --font-headline-xsmall-lh:   var(--line-height-300); /* 24px */
+
+  /* Title — Teacher (Open Sans) */
+  --font-title-large-size:  var(--font-size-500);  /* 24px */
+  --font-title-large-lh:    var(--line-height-500); /* 36px */
+  --font-title-medium-size: var(--font-size-400);  /* 20px */
+  --font-title-medium-lh:   var(--line-height-400); /* 32px */
+  --font-title-small-size:  var(--font-size-300);  /* 16px */
+  --font-title-small-lh:    var(--line-height-300); /* 24px */
+}

@@ -1,0 +1,143 @@
+@import "tailwindcss";
+@import "./tokens/tokens.css";
+@import "./tokens/theme-teacher.css";
+@import "./tokens/theme-student.css";
+
+@theme {
+  /* Expose static primitive colors as Tailwind utilities */
+  --color-sky-100: #effaff;
+  --color-sky-200: #d4eefc;
+  --color-sky-300: #b7e3fa;
+  --color-sky-400: #97d4f5;
+  --color-sky-500: #7ac7f0;
+  --color-sky-600: #59b6e8;
+  --color-sky-700: #38a4de;
+  --color-sky-800: #2f9ad4;
+  --color-sky-900: #2b8fc5;
+  --color-sky-1000: #28759f;
+  --color-sky-1100: #1f5e7f;
+  --color-sky-1200: #1a455b;
+
+  --color-grey-100: #f5f5f8;
+  --color-grey-200: #e9eaef;
+  --color-grey-300: #d1d3de;
+  --color-grey-400: #aeb7c2;
+  --color-grey-500: #8c99a8;
+  --color-grey-600: #6b7c8e;
+  --color-grey-700: #556474;
+  --color-grey-800: #3f4c5a;
+  --color-grey-900: #2a3541;
+
+  --color-gynzy-blue: #2f9ad4;
+  --color-gynzy-orange: #ff962e;
+
+  --font-family-heading: 'Lexend Deca', sans-serif;
+  --font-family-body: 'Open Sans', sans-serif;
+}
+
+/* Global base styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-body);
+  background-color: var(--neutral-100);
+  color: var(--neutral-900);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Smooth transitions on theme switch for all interactive elements */
+*, *::before, *::after {
+  transition-property: background-color, color, border-color, border-radius, font-size, min-height;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+}
+
+/* Override transition for layout changes to avoid jarring shifts */
+.no-transition, .no-transition * {
+  transition: none !important;
+}
+
+/* ============================================================
+   BUTTON HOVER/ACTIVE STATES via CSS
+   Using data-variant + data-color attributes
+   ============================================================ */
+
+.gynzy-btn { cursor: pointer; }
+.gynzy-btn:disabled { cursor: not-allowed; opacity: 0.6; }
+
+/* Filled Sky */
+.gynzy-btn[data-variant="filled"][data-color="sky"]:not(:disabled):hover {
+  background-color: var(--btn-filled-sky-bg-hover) !important;
+}
+.gynzy-btn[data-variant="filled"][data-color="sky"]:not(:disabled):active {
+  background-color: var(--btn-filled-sky-bg-active) !important;
+}
+
+/* Filled Pumpkin */
+.gynzy-btn[data-variant="filled"][data-color="pumpkin"]:not(:disabled):hover {
+  background-color: var(--btn-filled-pumpkin-bg-hover) !important;
+}
+.gynzy-btn[data-variant="filled"][data-color="pumpkin"]:not(:disabled):active {
+  background-color: var(--btn-filled-pumpkin-bg-active) !important;
+}
+
+/* Filled Crimson */
+.gynzy-btn[data-variant="filled"][data-color="crimson"]:not(:disabled):hover {
+  background-color: var(--btn-filled-crimson-bg-hover) !important;
+}
+.gynzy-btn[data-variant="filled"][data-color="crimson"]:not(:disabled):active {
+  background-color: var(--btn-filled-crimson-bg-active) !important;
+}
+
+/* Tonal */
+.gynzy-btn[data-variant="tonal"]:not(:disabled):hover {
+  background-color: var(--btn-tonal-bg-hover) !important;
+}
+.gynzy-btn[data-variant="tonal"]:not(:disabled):active {
+  background-color: var(--btn-tonal-bg-active) !important;
+}
+
+/* Outlined */
+.gynzy-btn[data-variant="outlined"]:not(:disabled):hover {
+  background-color: var(--btn-outlined-bg-hover) !important;
+}
+.gynzy-btn[data-variant="outlined"]:not(:disabled):active {
+  background-color: var(--btn-outlined-bg-active) !important;
+}
+
+/* Text */
+.gynzy-btn[data-variant="text"]:not(:disabled):hover {
+  background-color: var(--btn-text-bg-hover) !important;
+}
+.gynzy-btn[data-variant="text"]:not(:disabled):active {
+  background-color: var(--btn-text-bg-active) !important;
+}
+
+/* Focus ring for all buttons */
+.gynzy-btn:focus-visible {
+  outline: 2px solid var(--primary-700);
+  outline-offset: 2px;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--neutral-300); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--neutral-400); }
+
+/* Token chip style */
+.token-chip {
+  font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace;
+  font-size: 11px;
+  background: var(--neutral-200);
+  color: var(--neutral-700);
+  padding: 2px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
